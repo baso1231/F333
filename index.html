@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F333 লগিন F333.com নিবন্ধন অ্যাপ ডাউনলোড F333 নিবন্ধন করুন ৯৯৯ টাকা পেতে অথবা অ্যাপ ডাউনলোড করুন f333.com</title>
+    
+    <!-- ব্রাউজার ট্যাব এবং গুগলে লোগো দেখানোর জন্য ফেভিকন কোড -->
+    <link rel="icon" type="image/png" href="upper_logo.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="upper_logo.png">
+
+    <!-- এসইও ট্যাগ -->
+    <meta name="description" content="F333 লগিন F333.com নিবন্ধন অ্যাপ ডাউনলোড F333 নিবন্ধন করুন ৯৯৯ টাকা পেতে অথবা অ্যাপ ডাউনলোড করুন f333.com">
+    <meta name="keywords" content="f333, f333 login, f333 register, mobile gaming f333, f333 bangladesh">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0b0f19, #131c2e, #0f172a);
+            color: #f1f5f9;
+            line-height: 1.8;
+            padding-top: 110px;
+            padding-bottom: 110px;
+        }
+        .fixed-top-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(to right, #ffbb00, #ff0055, #ff4b2b) 1;
+        }
+        header {
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 38px;
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 0 8px rgba(255, 187, 0, 0.6));
+        }
+        .menu-btn {
+            background: linear-gradient(135deg, #ffbb00, #ff8800);
+            border: none;
+            color: #0b0f19;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 187, 0, 0.4);
+            transition: 0.3s;
+        }
+        .menu-btn:hover {
+            transform: scale(1.08);
+        }
+        
+        .dropdown-menu {
+            display: none;
+            background: #111827;
+            border-bottom: 3px solid #ffbb00;
+            padding: 12px 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+        }
+        .dropdown-menu a {
+            display: block;
+            color: #ffbb00;
+            text-decoration: none;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+        .dropdown-menu a:hover {
+            color: #fff;
+            padding-left: 8px;
+        }
+        .dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .top-btn-box {
+            display: flex;
+            gap: 10px;
+            padding: 12px 18px;
+            background: rgba(15, 23, 42, 0.8);
+            justify-content: center;
+        }
+        .top-btn {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn-red {
+            background: linear-gradient(135deg, #ff0055, #ff2a00, #ff0055);
+            background-size: 200% auto;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.7), inset 0 0 10px rgba(255, 255, 255, 0.4);
+            animation: pulse-red 1.8s infinite;
+            border: 1px solid #ff6699;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        @keyframes pulse-red {
+            0% { 
+                background-position: 0% center; 
+                box-shadow: 0 0 15px rgba(255, 0, 85, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+            50% { 
+                background-position: 100% center; 
+                box-shadow: 0 0 30px rgba(255, 0, 85, 1), 0 0 10px rgba(255, 255, 255, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.6);
+                transform: scale(1.02);
+            }
+            100% { 
+                background-position: 0% center; 
+                box-shadow: 0 0 15px rgba(255, 0, 85, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+        .btn-red:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 35px rgba(255, 0, 85, 1), 0 0 15px rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-yellow {
+            background: linear-gradient(135deg, #ffbb00, #ff8800);
+            color: #0b0f19;
+            box-shadow: 0 4px 15px rgba(255, 187, 0, 0.4);
+        }
+        .btn-yellow:hover {
+            box-shadow: 0 6px 20px rgba(255, 187, 0, 0.6);
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .hero-section {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 2px solid rgba(255, 187, 0, 0.4);
+            border-radius: 16px;
+            padding: 35px 20px;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section h1 {
+            color: #ffbb00;
+            font-size: 30px;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(255, 187, 0, 0.3);
+        }
+        .hero-section p {
+            font-size: 17px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+        
+        .middle-images-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .middle-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 187, 0, 0.5);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+        .middle-img:hover {
+            transform: scale(1.01);
+            border-color: #ffbb00;
+        }
+
+        .custom-banner-text {
+            background: linear-gradient(90deg, rgba(255, 187, 0, 0.15), rgba(255, 0, 85, 0.15));
+            border-left: 4px solid #ffbb00;
+            border-right: 4px solid #ff0055;
+            color: #ffde59;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 15px 0 5px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+        }
+
+        .promo-card {
+            background: linear-gradient(135deg, #2a0808, #1a0505, #0f0202);
+            border: 2px solid rgba(255, 0, 85, 0.6);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(255, 0, 85, 0.15);
+        }
+        .promo-card h3 {
+            color: #ffbb00;
+            font-size: 22px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 8px rgba(255, 187, 0, 0.4);
+        }
+        .promo-card p {
+            font-size: 16px;
+            color: #f1f5f9;
+            margin-bottom: 18px;
+        }
+        
+        .promo-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0055, #ff2a00, #ff0055);
+            background-size: 200% auto;
+            color: #fff;
+            padding: 12px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.7);
+            animation: pulse-red 1.8s infinite;
+            border: 1px solid #ff6699;
+            transition: 0.3s;
+        }
+        .promo-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 85, 1);
+        }
+        
+        .fixed-bottom-download {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 14px 15px;
+            box-shadow: 0 -8px 30px rgba(0,0,0,0.9);
+            z-index: 1000;
+            text-align: center;
+            border-top: 2px solid transparent;
+            border-image: linear-gradient(to right, #ff0055, #ffbb00) 1;
+        }
+        .big-download-btn {
+            display: block;
+            max-width: 850px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #ffd700, #ff8800, #ff0055, #ffd700);
+            background-size: 300% auto;
+            color: #0b0f19;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 187, 0, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.6);
+            border: 2px solid #ffffff;
+            transition: 0.3s;
+            animation: super-bounce-glow 1.2s infinite ease-in-out;
+        }
+
+        @keyframes super-bounce-glow {
+            0% { transform: translateY(0) scale(1); background-position: 0% center; box-shadow: 0 0 15px rgba(255, 187, 0, 0.6); }
+            30% { transform: translateY(-8px) scale(1.03); box-shadow: 0 0 35px rgba(255, 0, 85, 0.9), 0 0 15px rgba(255, 255, 255, 0.9); }
+            50% { transform: translateY(0) scale(1); background-position: 100% center; box-shadow: 0 0 20px rgba(255, 187, 0, 0.7); }
+            70% { transform: translateY(-5px) scale(1.02); box-shadow: 0 0 30px rgba(255, 187, 0, 1); }
+            100% { transform: translateY(0) scale(1); background-position: 0% center; box-shadow: 0 0 15px rgba(255, 187, 0, 0.6); }
+        }
+
+        .big-download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 0, 85, 1);
+        }
+
+        .content-box {
+            background: linear-gradient(145deg, #1e293b, #111827);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            border-left: 6px solid #ffbb00;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+        .content-box h2 {
+            color: #ffbb00;
+            font-size: 23px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 6px rgba(255, 187, 0, 0.3);
+        }
+        .content-box p {
+            font-size: 16px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #090d16;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed-top-area">
+        <header>
+            <div class="logo">
+                <a href="https://1f333.com/?dl=2f5ctf">
+                    <img src="upper_logo.png" alt="F333 Logo">
+                </a>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        
+        <div id="myDropdownMenu" class="dropdown-menu">
+            <a href="https://1f333.com/?dl=2f5ctf">🏠 হোম পেজ</a>
+            <a href="https://1f333.com/?dl=2f5ctf">📝 নিবন্ধন করুন (৯৯৯ টাকা বোনাস)</a>
+            <a href="https://1f333.com/?dl=2f5ctf">🔑 লগইন করুন</a>
+            <a href="https://1f333.com/?dl=2f5ctf">📥 অ্যাপ ডাউনলোড</a>
+            <a href="https://1f333.com/?dl=2f5ctf">📞 সাহায্য ও সহায়তা</a>
+        </div>
+
+        <div class="top-btn-box">
+            <a href="https://1f333.com/?dl=2f5ctf" class="top-btn btn-red">নিবন্ধন করুন</a>
+            <a href="https://1f333.com/?dl=2f5ctf" class="top-btn btn-yellow">লগইন</a>
+        </div>
+    </div>
+
+    <div class="fixed-bottom-download">
+        <a href="https://1f333.com/?dl=2f5ctf" class="big-download-btn">📥 অ্যাপ ডাউনলোড করুন (F333)</a>
+    </div>
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>👑 F333 মোবাইল গেমিং তথ্য</h1>
+            <p>অফিশিয়াল প্ল্যাটফর্ম F333-এ আপনাকে স্বাগতম। বাংলাদেশের ব্যবহারকারীদের জন্য F333 একটি নির্ভরযোগ্য তথ্যবহুল নির্দেশিকা ও প্রমোশনাল সাইট।</p>
+            
+            <div class="middle-images-box">
+                <img src="banner1.png" alt="Banner 1" class="middle-img">
+                <div class="custom-banner-text">
+                    F333.com আসুন আমাদের সাইটে বোনাস সংগ্রহ করতে আপনার জয়ের পেতে
+                </div>
+
+                <img src="banner2.png" alt="Banner 2" class="middle-img">
+                <div class="custom-banner-text">
+                    F333 আপনি যদি একাউন্ট খোলেন সর্বোচ্চ ৯৯৯৯ টাকা ইন্সটল ক্যাশব্যাক বোনাস পাবেন
+                </div>
+
+                <img src="banner3.png" alt="Banner 3" class="middle-img">
+                <div class="custom-banner-text">
+                    F333 এখন যদি জমা করেন ৬৬৬৬ টাকা পর্যন্ত বোনাস পেতে পারেন
+                </div>
+
+                <img src="banner4.png" alt="Banner 4" class="middle-img">
+            </div>
+        </div>
+
+        <div class="promo-card">
+            <h3>🎁 রেফার করুন এবং ইনকাম করুন - F333</h3>
+            <p>F333 এর মাধ্যমে বন্ধুদের আমন্ত্রণ জানান এবং প্রতিটি সফল রেফারেলের জন্য আকর্ষণীয় বোনাস উপভোগ করুন।</p>
+            <a href="https://1f333.com/?dl=2f5ctf" class="promo-btn">নিবন্ধন করুন / অংশগ্রহণ করুন</a>
+        </div>
+
+        <div class="content-box">
+            <h2>কেন F333 প্ল্যাটফর্ম পর্যালোচনা করা অত্যন্ত গুরুত্বপূর্ণ?</h2>
+            <p>F333 ভিজিট করলে আপনি মোবাইল গেমিং প্ল্যাটফর্মের নীতিমালা, অ্যাকাউন্ট সুরক্ষা এবং প্রমোশনাল অফারের সঠিক ব্যবহার সম্পর্কে বিস্তারিত জানতে পারবেন।</p>
+        </div>
+
+        <div class="content-box">
+            <h2>F333 নিরাপত্তা এবং নিয়ন্ত্রণ</h2>
+            <p>F333-এর নির্দেশিকা অনুসরণ করে আপনার অ্যাকাউন্ট সুরক্ষিত রাখুন। পাসওয়ার্ড বা ওয়ান-টাইম ভেরিফিকেশন কোড কখনো কারো সাথে শেয়ার করবেন না।</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 F333 সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("myDropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
